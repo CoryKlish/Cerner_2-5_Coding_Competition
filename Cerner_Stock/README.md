@@ -1,0 +1,1 @@
+Script to retrieve current Cerner Stock price and print upon running
