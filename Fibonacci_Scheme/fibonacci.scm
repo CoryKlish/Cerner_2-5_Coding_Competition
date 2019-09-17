@@ -2,13 +2,11 @@
 
 ; Fibonacci Sequence
 ; Calculates the nth Fibonacci number using Tail Recursion
-; To calculate 50th Fibonacci number: '(fib 50)'
+; Pass 'a' as 0 (First Fibonacci number)
+; Pass 'b' as 1 (Second Fibonacci number)
+; To calculate 50th Fibonacci number: '(fib 50 0 1)'
 
-(define a 0)
-(define b 1)
-(define temp 0)
-
-(define (fib n)
+(define (fib n a b)
   (cond ((<= n 0) a)
         ((= n 1) b)
-        (else (and (and (and (set! temp b) (set! b (+ a b)) (set! a temp)) (fib (- n 1) a b))))))
+        (else (fib (- n 1) b (+ a b))) 
