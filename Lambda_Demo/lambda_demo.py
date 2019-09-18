@@ -60,7 +60,7 @@ list(map(lambda x: x*x, intList)) # => [1, 4, 9, 16, 25]
 
 list(filter(lambda x: isinstance(x, int), [1,'hello',2,'cerner',3,'associate'])) # => [1, 2, 3]
 # Shorthand for above statement:
-[x for x in intList if isinstance(x, int)]
+[x for x in [1,'hello',2,'cerner',3,'associate'] if isinstance(x, int)]
 
 from functools import reduce as reduce
 reduce(lambda acc, val: acc + val, intList) # => 15
