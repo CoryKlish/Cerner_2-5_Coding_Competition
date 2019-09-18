@@ -1,0 +1,1 @@
+Demo of Python's lambda and other syntactic sugar. Try it out here: https://repl.it/@CoryKlish/lambdademo
